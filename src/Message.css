@@ -1,0 +1,13 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message * {
+  margin-right: 10px;
+}
+
+.message *:last-child {
+  margin-right: 0;
+}
