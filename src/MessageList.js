@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Message.css';
+import {Button, TextField} from '@mui/material/';
 
 export const Message = ({ msg }) => {
   return (
@@ -53,9 +54,9 @@ export const MessageList = () => {
           <Message msg={msg} />
         ))}
       </div>
-
-      <input placeholder="Введите сообщение..." value={value} onChange={(e) => setValue(e.target.value)} />
-      <button onClick={sendMessage} >Отправить</button>
+      <TextField sx={{marginRight: '20px'}} focused id="outlined-basic" label="Введите сообщение..." variant="outlined" size="small" value={value} onChange={(e) => setValue(e.target.value)}/>
+      {/* <input placeholder="Введите сообщение..." value={value} onChange={(e) => setValue(e.target.value)} /> */}
+      <Button onClick={sendMessage} variant="contained">Отправить</Button>
     </>
   );
 
