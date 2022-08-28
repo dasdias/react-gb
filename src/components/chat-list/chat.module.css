@@ -1,0 +1,9 @@
+.listItem__name {
+  margin-right: 10px;
+}
+
+.istItem__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
